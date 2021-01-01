@@ -27,23 +27,29 @@ Le seuil correspondant
 
 #### Le recall (rappel ou sensibilité) et la précision
 
-*T<sub>p</sub>* (Vrais positifs): représente le nombre d'individus déclarés positifs alors qu'ils le sont
+* *T<sub>p</sub>* (Vrais positifs): représente le nombre d'individus déclarés positifs alors qu'ils le sont
 
-*F<sub>p</sub>* (Faux positifs) :  représente le nombre d'individus déclarés positifs à tort
+* *F<sub>p</sub>* (Faux positifs) :  représente le nombre d'individus déclarés positifs à tort
 
-*T<sub>n</sub>* (Vrais negatifs): représente le nombre déclarés négatifs alors qu'ils le  sont
+* *T<sub>n</sub>* (Vrais negatifs): représente le nombre déclarés négatifs alors qu'ils le  sont
 
-*F<sub>n</sub>* (Faux negatifs) : représente le nombre déclarés négatifs à tort
+* *F<sub>n</sub>* (Faux negatifs) : représente le nombre déclarés négatifs à tort
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\text{F1-Score} = \frac{ \text{Précision} \times\text{Recall}}{2\times(\text{Précision  %2B Recall})}">
+</p>
 
-
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\text{Précision} = \frac{ T_p}{T_p  %2B F_p}">
+</p>
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\text{Recall} = \frac{ T_p}{T_p  %2B F_n}">
+</p>
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\text{Spécificité} = \frac{ T_n}{F_p  %2B T_n} = 1 - \frac{ F_p}{F_n  %2B T_n}">
-
+</p>
 
 **Exemple**
 * Sensibilité : proportion de vrais positifs parmi les personnes à dépister
@@ -62,7 +68,9 @@ Voici quelques indicateurs permettant de mesurer la qualité d'une prévision po
 
 La somme des carrés des résidus (SCR ou Sum of Squared Errors). Comme on mesure des carrés, on majore l’importance des grosses erreurs.
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=SCR = \sum_{k=1}^{n} (Y_k - \hat{Y}_k)^2">
+</p>
 
 **MSE pour Mean Square Error ou MCE pour moyenne des carrés des erreurs**
 
@@ -71,37 +79,58 @@ C’est la valeur à minimiser dans le cadre d’une régression simple ou multi
 
 La formule de calcul change selon le contexte puisque la somme des carrés est divisée par un nombre de degrés de liberté:
 * Cas d’une série chronologique :
+
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={MSE = \frac{SCR}{n}}">
+</p>
 
-* Cas d'une régression simple : 
+* Cas d'une régression simple :   
+
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={MSE = \frac{SCR}{n%20-%202}}">
+</p>
 
-* Cas d'une régression multiple (`k` = nombre de variables explicatives):
+* Cas d'une régression multiple (`k` = nombre de variables explicatives):   
+
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={MSE = \frac{SCR}{n%20-%20k-%201}}">
+</p>
 
 Si l'on compare deux estimateurs sans biais, le meilleur est bien sûr celui qui présente le MSE le plus faible.
 
-**L’erreur-type (RMSE) : racine carrée du précédent**
+**L’erreur-type (RMSE) : racine carrée du précédent**   
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={RMSE =\sqrt{ MSE}}">
+</p>
 
-L’erreur absolue moyenne (MAE pour Mean Absolute Error) : moyenne arithmétique des valeurs absolues des écarts.
+L’erreur absolue moyenne (MAE pour Mean Absolute Error) : moyenne arithmétique des valeurs absolues des écarts.   
+
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={MAE = \frac{1}{n}\sum_{k=1}^{n} \left| Y_k - \hat{Y}_k \right|}">
+</p>
 
 **Mean Absolute Percentage Error (MAPE)**
 
 L’erreur absolue moyenne en pourcentage (Mean Absolute Percentage Error, alias MAPE) : moyenne des écarts en valeur absolue par rapport aux valeurs observées.
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={MAPE = \frac{1}{n}\sum_{k=1}^{n} \left| \frac{Y_k - \hat{Y}_k}{Y_k} \right|}">
+</p>
 
 C’est donc un pourcentage et par conséquent un indicateur pratique de comparaison. Hélas, petit inconvénient, le MAPE ne peut s’appliquer qu’à des valeurs strictement POSITIVES. Il permet donc de juger si le système de prévision des ventes est bon, mais il est inefficace pour apprécier la qualité d’estimations de résultats qui peuvent être soit des bénéfices soit des pertes (ça tombe bien, il est un peu stupide de prévoir directement un solde plutôt que ces composantes positives ou négatives).
 
 **Coefficient de détermination et R²**
 
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={R^2 = 1 - \frac{SCR}{SCT}}">
+</p>
 
 Avec SCT est la somme des carrés totaux :
+
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math={SCT = \sum_{k=1}^{n} (Y_k - \bar{Y})^2}">
+</p>
 
 Sources :   
 [Ricco RAKOTOMALALA](http://eric.univ-lyon2.fr/~ricco/cours/slides/roc_curve.pdf)   
