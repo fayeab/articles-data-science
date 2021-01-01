@@ -5,4 +5,4 @@
 [Introduction à l'analyse de la donnée textuelle](articles/intro-analyse-donnee-textuelle.md)
 
 # Evaluation des modèles statistiques
-[Classification supervisée : Quelques métriques pour la comparaison de modèles](articles/metriques-comparaison-modeles-machine-learning.md)
+[Classification supervisée : Quelques métriques pour la comparaison de modèles](articles/metriques-comparaison-modeles-app-supervisee.md)
