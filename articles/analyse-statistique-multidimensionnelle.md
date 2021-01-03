@@ -40,7 +40,7 @@ En associant à ces graphiques les contributions des individus aux axes, on peut
 ###  [3. Cercle de corrélation](http://www.jybaudot.fr/Analdonnees/cerclecor.html)
 
 Si une variable devait être parfaitement corrélée avec l’axe F1, sa représentation se confondrait avec lui (point rouge ci-dessous). Cette situation ne se vérifie presque jamais. Si l’inertie d’une variable est complètement absorbée par les deux premières composantes principales, le point se trouve sur le cercle mais entre les deux axes F1 et F2 (point bleu). Si la corrélation est parfaite mais qu’elle est négative, par exemple avec la première composante, il se trouve sur un autre quart du cercle (point vert). Si l’inertie de la variable n’est presque pas absorbée par les deux premiers axes mais par un troisième ou par les suivants, non représentés, son point représentatif est assez loin du cercle, du moins dans le premier plan factoriel. Ceci signifie que la corrélation est faible et que cette variable ne doit pas être prise en compte à ce niveau-ci de l’analyse (point rose).
-<img src="images/analyse-multivariee/cercle_correlation.png">
+<img src="images/analyse-multivariee/cercle_correlation.PNG">
 
 ## [B. Analyses factorielles (AFC)](https://www.math.univ-toulouse.fr/~baccini/zpedago/asdm.pdf)
 
