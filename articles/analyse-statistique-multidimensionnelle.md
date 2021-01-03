@@ -5,7 +5,7 @@
 [Alain Baccini](https://www.math.univ-toulouse.fr/~baccini/zpedago/asdm.pdf)  
 [Jean-Yves BAUDOT](http://www.jybaudot.fr/index.html)  
 
-J'ai fait également un tutoriel sur la mise en œuvre de l'analyse statistique multidimensionnelle avec Python. Il est disponible [ici](../../python-data-science/tutoriels/python-analyse-statistique-multidimensionnelle.ipynb) 
+J'ai fait également un tutoriel sur la mise en œuvre de l'analyse statistique multidimensionnelle avec Python. Il est disponible [ici](https://github.com/fayeab/python-data-science/blob/main/tutoriels/python-analyse-statistique-multidimensionnelle.ipynb) 
 
 # Analyse Statistique Multidimensionnelle
 
