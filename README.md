@@ -1,3 +1,6 @@
+# Exploration statistique
+[Analyse statistique multidimensionnelle](articles/analyse-statistique-multidimensionnelle.md)   
+
 # Classification non supervisée
 [Classiﬁcation automatique et Cartes topologiques de Kohonen](articles/clustering-cartes-kohonen.md)
 
